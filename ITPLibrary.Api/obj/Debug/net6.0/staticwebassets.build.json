@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qWkNpAAgqqIF3+4UAlXn4FE1xg2ZGZ1tcNmjCgA53zs=",
+  "Source": "ITPLibrary.Api",
+  "BasePath": "_content/ITPLibrary.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

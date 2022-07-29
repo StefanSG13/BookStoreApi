@@ -1,0 +1,14 @@
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.csproj.AssemblyReference.cache
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.AssemblyInfoInputs.cache
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.AssemblyInfo.cs
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.csproj.CoreCompileInputs.cache
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\bin\Debug\net6.0\ITPLibrary.Api.Data.deps.json
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\bin\Debug\net6.0\ITPLibrary.Api.Data.runtimeconfig.json
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\bin\Debug\net6.0\ITPLibrary.Api.Data.dll
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\bin\Debug\net6.0\ITPLibrary.Api.Data.pdb
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.dll
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\refint\ITPLibrary.Api.Data.dll
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.pdb
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ITPLibrary.Api.Data.genruntimeconfig.cache
+C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api.Data\obj\Debug\net6.0\ref\ITPLibrary.Api.Data.dll
