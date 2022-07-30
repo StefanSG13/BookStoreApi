@@ -26,5 +26,10 @@ namespace ITPLibrary.Api.Core.Services
         {
             _userManagement.Register(_mapper.Map<User>(userDto));
         }
+
+        public UserDto Get(string email)
+        {
+            return _mapper.Map<UserDto>(_userManagement.GetFirstOrDefault(email));
+        }
     }
 }

@@ -16,6 +16,13 @@ namespace ITPLibrary.Api.Data.Repositories
         {
             _db = db;
         }
+
+        public User GetFirstOrDefault(string email)
+        {
+            var sqlCommand = String.Format("Select * FROM Users WHERE email='{0}'",email);
+            return _db.Get(sqlCommand);
+        }
+
         public void Register(User user)
         {
             var sqlCommand = "INSERT INTO Users (email, password) VALUES(@Email, @Password)";

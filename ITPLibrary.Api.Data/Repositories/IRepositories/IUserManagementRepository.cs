@@ -10,5 +10,6 @@ namespace ITPLibrary.Api.Data.Repositories.IRepositories
     public interface IUserManagementRepository
     {
         void Register(User user);
+        User GetFirstOrDefault(string email);
     }
 }
