@@ -57,7 +57,6 @@ C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\ITPL
 C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\ITPLibrary.Api.Data.dll
 C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\ITPLibrary.Api.Core.pdb
 C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\ITPLibrary.Api.Data.pdb
-C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\obj\Debug\net6.0\ITPLibrary.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Stefan\source\repos\ITPLibrary.Api\ITPLibrary.Api\bin\Debug\net6.0\Azure.Core.dll

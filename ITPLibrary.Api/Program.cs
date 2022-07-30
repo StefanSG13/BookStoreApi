@@ -20,6 +20,8 @@ namespace ITPLibrary.Api
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped(typeof(ISqlDataAcces<>), typeof( SqlDataAcces<>));
+            builder.Services.AddScoped<IUserManagementRepository, UserManagementRepository>();
+            builder.Services.AddScoped<IUserManagementService, UserManagementService>();
             builder.Services.AddScoped<IBookRepository, BookRepository>();
             builder.Services.AddScoped<IBookService, BookService>();
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -34,6 +36,8 @@ namespace ITPLibrary.Api
             }
 
             app.UseHttpsRedirection();
+
+            //app.UseAuthentication();
 
             app.UseAuthorization();
 
