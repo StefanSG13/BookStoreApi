@@ -20,15 +20,29 @@ namespace ITPLibrary.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserDto>> Register([FromBody]UserDto userDto)
+        public async Task<ActionResult<UserDto>> Register([FromBody] UserDto userDto)
         {
             if (userDto.ConfirmPassword != userDto.Password)
                 return Conflict("ConfirmPassword is different from Password");
-            if(_userManagementService.Get(userDto.Email)!=null)
+            if (_userManagementService.Get(userDto.Email) != null)
                 return Conflict("Email already exists");
             _userManagementService.Register(userDto);
             var uri = new Uri("https://myUri.com");
-            return Created(uri,userDto);
+            return Created(uri, userDto);
+        }
+
+        [HttpPost("authenticate")]
+        public async Task<ActionResult<AuthRequestDto>> Login([FromBody] AuthRequestDto user)
+        {
+            var token = _userManagementService.GetToken(user);
+            if (token == null)
+                return Unauthorized();
+            return Ok(token.Token);
+        }
+
+        [HttpPost("FogotPassword")]
+        public async Task<ActionResult> ForgotPassword() {
+        return null;
         }
 
     }

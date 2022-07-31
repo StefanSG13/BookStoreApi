@@ -6,5 +6,6 @@ namespace ITPLibrary.Api.Core.Services.IServices
     {
         void Register(UserDto userDto);
         public UserDto Get(string email);
+        public AuthResponseDto GetToken(AuthRequestDto authRequestDto);
     }
 }

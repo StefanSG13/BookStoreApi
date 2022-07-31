@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace ITPLibrary.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
+    [Authorize]
     public class BookController : ControllerBase
     {
         private readonly IBookService _books;
@@ -42,7 +43,7 @@ namespace ITPLibrary.Api.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateBook(int id, BookDto bookDto)
         {
-            if (id != bookDto.Id)
+            if (id != bookDto.BookId)
             {
                 return BadRequest();
             }

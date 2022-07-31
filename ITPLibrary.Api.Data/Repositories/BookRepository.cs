@@ -24,7 +24,7 @@ namespace ITPLibrary.Api.Data.Repositories
         }
         public void Update(Book entity)
         {
-            String sqlCommand = "UPDATE Books SET title=@Title, author=@Author, description=@Description, price=@Price WHERE id=@Id";
+            String sqlCommand = "UPDATE Books SET title=@Title, author=@Author, description=@Description, price=@Price WHERE bookId=@BookId";
             _db.Update(sqlCommand, entity);
         }
         public void Delete(int id)

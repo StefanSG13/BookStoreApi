@@ -8,16 +8,23 @@ using System.Threading.Tasks;
 namespace ITPLibrary.Api.Core.Dtos
 {
     public class BookDto
-    { 
-        public int Id { get; set; }
+    {
+        public int BookId { get; set; }
         [Required]
         public string Title { get; set; }
         [Required]
-        public string Author { get; set; }
+        public string ShortDesc { get; set; }
         [Required]
-        public string Description { get; set; }
+        public string LongDesc { get; set; }
+        [Required]
+        public byte[] Image { get; set; }
+        [Required]
+        public byte[] Thumbnail { get; set; }
+        [Required]
+        public bool IsPopular { get; set; }
         [Required]
         public double Price { get; set; }
+        public DateTime CreatedDateTime { get; set; }
 
     }
 }
