@@ -41,9 +41,21 @@ namespace ITPLibrary.Api.Controllers
         }
 
         [HttpPost("FogotPassword")]
-        public async Task<ActionResult> ForgotPassword() {
-        return null;
+        public async Task<ActionResult> ForgotPassword([FromBody] ForgotPasswordDto forgotPasswordDto)
+        {
+            var user = _userManagementService.Get(forgotPasswordDto.Email);
+            if (user.Email == null)
+            {
+                return NotFound("This email is not registered");
+            }
+            else
+            {
+                _userManagementService.RecoverPassword(user);
+                return Ok("A mail with your password has been sent.");
+            }
         }
+
+
 
     }
 }

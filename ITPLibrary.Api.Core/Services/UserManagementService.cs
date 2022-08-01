@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ITPLibrary.Api.Core.Dtos;
+using ITPLibrary.Api.Data;
 using ITPLibrary.Api.Data.Models;
 using ITPLibrary.Api.Data.Repositories.IRepositories;
 using Microsoft.Extensions.Configuration;
@@ -68,6 +69,11 @@ namespace ITPLibrary.Api.Core.Services
             AuthResponseDto responseDto = new AuthResponseDto();
             responseDto.Token = tokenHandler.WriteToken(token);
             return responseDto;
+        }
+
+        public void RecoverPassword(UserDto user)
+        {
+            EmailSender.SendEmailAsync(user.Email, "Password from book store.", "this is ur password: "+user.Password);
         }
     }
 }

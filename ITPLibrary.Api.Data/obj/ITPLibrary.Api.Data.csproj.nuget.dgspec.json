@@ -52,9 +52,17 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.123, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -85,6 +93,10 @@
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
               "version": "[6.22.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

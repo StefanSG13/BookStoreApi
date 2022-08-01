@@ -19,6 +19,7 @@ namespace ITPLibrary.Api.Core.Dtos
         [Required]
         public byte[] Image { get; set; }
         [Required]
+        
         public byte[] Thumbnail { get; set; }
         [Required]
         public bool IsPopular { get; set; }

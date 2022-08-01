@@ -19,17 +19,17 @@ namespace ITPLibrary.Api.Data.Repositories
 
         public void Add(Book entity)
         {
-            String sqlCommand = "INSERT INTO Books (title, author, description, price) VALUES(@Title, @Author, @Description, @Price)";
+            String sqlCommand = "INSERT INTO Books (title, author, shortdesc,longdesc, thumbnail, image, ispopular, price, createddatetime) VALUES(@Title, @Author, @ShortDesc,@LongDesc, @Thumbnail, @Image, @IsPopular, @Price, @CreatedDateTime)";
             _db.Add(sqlCommand, entity);
         }
         public void Update(Book entity)
         {
-            String sqlCommand = "UPDATE Books SET title=@Title, author=@Author, description=@Description, price=@Price WHERE bookId=@BookId";
+            String sqlCommand = "UPDATE Books SET title=@Title, author=@Author, shortdesc=@ShortDesc,longdesc=@LongDesc, thumbnail=@Thumbnail, image=@Image, ispopular=@IsPopular, price=@Price, createddatetime=@CreatedDateTime WHERE bookId=@BookId";
             _db.Update(sqlCommand, entity);
         }
         public void Delete(int id)
         {
-            string sqlCommand = "DELETE FROM Books WHERE id=@Id;";
+            string sqlCommand = "DELETE FROM Books WHERE bookid=@BookId;";
             _db.Delete(sqlCommand, id);
         }
         public IEnumerable<Book> GetAll(string? includeProperties = null)
@@ -39,7 +39,7 @@ namespace ITPLibrary.Api.Data.Repositories
 
         public Book GetFirstOrDefault(int id)
         {
-            String querryString = String.Format("Select * FROM Books WHERE id={0}", id);
+            String querryString = String.Format("Select * FROM Books WHERE BookId={0}", id);
             return _db.Get(querryString);
         }
     }
